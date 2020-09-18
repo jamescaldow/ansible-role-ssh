@@ -1,0 +1,13 @@
+---
+- name: Converge
+  hosts: all
+  become: true
+
+  vars:
+    ssh_port: "222"
+    root_login: "no"
+    password_auth: "no"
+    ssh_motd: "yes"
+
+  roles:
+    - role: jamescaldow.ssh
