@@ -1,4 +1,13 @@
 ---
+- name: include os-specific variables
+  include_vars: "{{ ansible_os_family }}.yml"
+
+- include_tasks: install-RedHat.yml
+  when: ansible_os_family == 'RedHat'
+
+- include_tasks: install-Debian.yml
+  when: ansible_os_family == 'Debian'
+
 - name: copy sshd_config to server
   template:
     src: sshd_config.j2

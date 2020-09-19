@@ -1,0 +1,6 @@
+---
+- name: ensure ssh server is installed for redhat based distros
+  yum:
+    name: "{{ ssh_server }}"
+    state: present
+  become: true

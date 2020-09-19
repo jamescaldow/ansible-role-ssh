@@ -1,0 +1,8 @@
+---
+- name: ensure ssh server is installed for debian based distros
+  apt:
+    name: "{{ ssh_server }}"
+    update_cache: true
+    cache_valid_time: 86400
+    state: present
+  become: true
