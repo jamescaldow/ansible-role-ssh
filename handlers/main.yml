@@ -1,3 +1,12 @@
 ---
 - name: restart ssh
   service: name=sshd state=restarted
+
+- name: start ssh
+  service: name=sshd state=started
+
+- name: stop ssh
+  service: name=sshd state=stopped
+
+- name: enable ssh
+  service: name=sshd state=started enabled=yes

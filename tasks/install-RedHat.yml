@@ -4,3 +4,6 @@
     name: "{{ ssh_server }}"
     state: present
   become: true
+
+- name: start ssh
+  service: name=sshd state=started
