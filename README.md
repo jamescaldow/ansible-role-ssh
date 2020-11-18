@@ -1,6 +1,6 @@
 # Ansible Role: SSH
 
-[![Build Status](https://travis-ci.com/jamescaldow/ansible-role-ssh.svg?branch=master)](https://travis-ci.com/jamescaldow/ansible-role-ssh)
+[![CI](https://github.com/jamescaldow/ansible-role-ssh/workflows/CI/badge.svg?event=push)](https://github.com/jamescaldow/ansible-role-ssh/actions?query=workflow%3ACI)
 
 Simple role to manage ssh on Linux systems. Allows the user to define port, password auth and other variables.
 ## Requirements
